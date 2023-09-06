@@ -1,0 +1,60 @@
+:root {
+    --MyWhite: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+body {
+    background-color: var(--LightGray);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--MyWhite);
+    width: 22vw;
+    border-radius: 6%;
+    margin: 5% auto;
+    padding: 1% 0.1%;
+}
+.contenedor_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.contenedor_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1% 7%;
+}
+img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+h4 {
+    color: var(--DarkBlue);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+p{
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        width: 80vw;
+        margin: 20% auto;
+        padding: 5% 1%;
+    }
+}
